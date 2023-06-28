@@ -1,0 +1,9 @@
+<div class="action-icons">
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon aria-hidden="false" fontIcon="more_vert"></mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="invokeParentMethod('edit')">Edit Skills</button>
+    <button mat-menu-item (click)="invokeParentMethod('view')">View Skills</button>
+  </mat-menu>
+</div>
